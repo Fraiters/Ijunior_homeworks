@@ -6,9 +6,6 @@ public class Trash : MonoBehaviour
 { 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.TryGetComponent(out Transform transform))
-        {
             Destroy(collision.gameObject);
-        }
     }
 }
