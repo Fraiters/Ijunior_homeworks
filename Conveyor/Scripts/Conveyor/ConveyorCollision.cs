@@ -6,7 +6,7 @@ using UnityEngine;
 public class ConveyorCollision : MonoBehaviour
 {
     [SerializeField] private int _force;
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         collision.rigidbody.AddForce(Vector3.forward * _force, ForceMode.Impulse);
     }
